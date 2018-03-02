@@ -12,7 +12,7 @@ export function loadAuthors() {
       dispatch(beginAjaxCall());
       dispatch(loadAuthorsSuccess(authors));
     }).catch(error => {
-      dispatch(ajaxCallError())
+      dispatch(ajaxCallError());
       throw(error);
     });
   };
